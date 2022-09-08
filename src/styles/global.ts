@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import theme from './theme'
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -65,7 +66,11 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif-serif;
+    /* background-color: ${theme.colors.black}; */
+    background-color: ${theme.colors.white};
+    color: ${theme.colors.white};
   }
+ 
 `
 
 export default GlobalStyles
