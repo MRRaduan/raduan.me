@@ -24,7 +24,7 @@ export const Title = styled.h1`
 
 export const PostList = styled.div`
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 24px;
 
   .post__wrapper {
     transition: all 0.2s ease-in-out;

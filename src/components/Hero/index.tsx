@@ -16,7 +16,7 @@ const Hero = () => {
     tl.fromTo(
       content.current,
       { y: 200 },
-      { y: 0, ease: 'Power1.easeInOut' },
+      { y: 0, zIndex: 151, ease: 'Power1.easeInOut' },
       2
     )
       .to(

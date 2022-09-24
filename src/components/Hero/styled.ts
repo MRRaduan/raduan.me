@@ -19,7 +19,7 @@ export const Bg = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${theme.colors.black};
-  z-index: 100;
+  z-index: 149;
 `
 
 export const ImageBg = styled.div`

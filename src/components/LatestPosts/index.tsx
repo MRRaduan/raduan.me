@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Button from '../Button'
 import Post from '../Post'
 import * as S from './styled'
 
@@ -14,6 +15,7 @@ const LatestPosts = () => {
             </a>
           </Link>
         ))}
+        <Button>see all posts</Button>
       </S.PostList>
     </S.Wrapper>
   )

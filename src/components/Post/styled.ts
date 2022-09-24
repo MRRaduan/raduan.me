@@ -20,12 +20,12 @@ export const PostCategory = styled.div`
 
 export const PostTitle = styled.h1`
   font-family: ${theme.font.serif};
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: ${theme.colors.white};
   font-weight: 300;
   margin-bottom: 8px;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('huge')`
     font-size: 2.4rem;
   `}
 `

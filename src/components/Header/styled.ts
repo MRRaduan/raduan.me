@@ -15,6 +15,22 @@ export const Header = styled.header`
   top: 6px;
   left: 6px;
   border-radius: 12px 12px 0 0;
+  z-index: 149;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: ${theme.colors.blue} 0%;
+
+    ${media.greaterThan('medium')`
+    display: none;
+  `}
+  }
   ${media.greaterThan('medium')`
     top: 15px;
     left: 15px;
