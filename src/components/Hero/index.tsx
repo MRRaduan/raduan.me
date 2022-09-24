@@ -1,3 +1,4 @@
+import React from 'react'
 import * as S from './styled'
 import Image from 'next/image'
 import Button from '../Button'
@@ -7,6 +8,7 @@ import { useEffect, useRef, useState } from 'react'
 const Hero = () => {
   const bg = useRef(null)
   const content = useRef(null)
+  const aboutButton = useRef<HTMLDivElement>(null)
   const img = useRef(null)
   const [tl, setTl] = useState(() => gsap.timeline())
 
@@ -15,26 +17,41 @@ const Hero = () => {
       content.current,
       { y: 200 },
       { y: 0, ease: 'Power1.easeInOut' },
-      5
+      2
     )
       .to(
         bg.current,
         {
-          scale: 0,
           opacity: 0,
           transformOrigin: 'top left',
           ease: 'Power1.easeInOut',
+          display: 'none',
         },
         '<'
       )
       .fromTo(
         img.current,
-        { x: 10, opacity: 0, ease: 'Power1.easeInOut' },
-        { x: 0, opacity: 1, duration: '2.1', ease: 'Power1.easeInOut' },
-
+        { x: -10, opacity: 0, ease: 'Power1.easeInOut' },
+        {
+          x: 0,
+          opacity: 1,
+          duration: '1.2',
+          ease: 'Power1.easeInOut',
+        },
         '<'
       )
-  }, [])
+      .fromTo(
+        aboutButton.current,
+        { y: 10, opacity: 0, ease: 'Power1.easeInOut' },
+        {
+          y: 0,
+          opacity: 1,
+          duration: '1',
+          ease: 'Power1.easeInOut',
+        },
+        '<'
+      )
+  }, [tl])
 
   return (
     <S.Section>
@@ -54,7 +71,7 @@ const Hero = () => {
           <span className="italic">Maintain</span>
         </S.Function>
         <S.ButtonWrapper>
-          <Button>about me</Button>
+          <Button ref={aboutButton}>about me</Button>
         </S.ButtonWrapper>
       </S.Content>
       <S.Bg ref={bg} />

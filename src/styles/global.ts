@@ -69,6 +69,7 @@ const GlobalStyles = createGlobalStyle`
     /* background-color: ${theme.colors.black}; */
     background-color: ${theme.colors.white};
     color: ${theme.colors.white};
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
  
 `

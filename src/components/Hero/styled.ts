@@ -13,10 +13,10 @@ export const Section = styled.section`
 `
 
 export const Bg = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: ${theme.colors.black};
   z-index: 100;
@@ -86,5 +86,4 @@ export const Function = styled.h2`
 
 export const ButtonWrapper = styled.div`
   margin-top: 1.2rem;
-  opacity: 0;
 `

@@ -38,10 +38,26 @@ export const Profile = styled.div`
 
 export const Avatar = styled.div`
   display: none;
+
+  transition: 0.16s;
   ${media.greaterThan('medium')`
     display: block;
     margin-bottom: 10px;
   `}
+  &:hover {
+    transform: scale3d(1.6, 1.6, 1.6);
+    transition: 0.16s;
+
+    & ~ .logo {
+      transform: translate3d(0, 20px, 0);
+
+      transition: 0.23s;
+    }
+  }
+
+  & ~ .logo {
+    transition: 0.12s;
+  }
 `
 
 export const Role = styled.span`
@@ -92,6 +108,11 @@ export const Lines = styled.div`
   `}
 `
 
+export const SDGAbreviation = styled.span``
+export const SDGFull = styled.span`
+  display: none;
+`
+
 export const SDG = styled.span`
   display: none;
   ${media.greaterThan('medium')`
@@ -100,4 +121,14 @@ export const SDG = styled.span`
     font-family: ${theme.font.serif};
     font-style: italic;
   `}
+
+  &:hover {
+    ${SDGFull} {
+      display: block;
+      font-size: 1.6rem;
+    }
+    ${SDGAbreviation} {
+      display: none;
+    }
+  }
 `

@@ -51,6 +51,7 @@ export const Borders = styled.div`
   background-clip: content-box, border-box;
   ${media.greaterThan('medium')` 
     border-width: 15px;
+    overflow-y: hidden;
   `}
 `
 

@@ -2,6 +2,19 @@ import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+export const Title = styled.h1`
+  font-size: 2.8rem;
+  color: ${theme.colors.white};
+  font-family: ${theme.font.serif};
+  font-weight: 300;
+  position: relative;
+  ${media.greaterThan('medium')`
+    font-size: 11.0rem;
+    width: 31.0rem;
+    line-height: 0.95em;
+  `}
+`
+
 export const Wrapper = styled.a`
   background-color: ${theme.colors.black};
   display: flex;
@@ -45,20 +58,6 @@ export const Wrapper = styled.a`
     }
   }
 `
-
-export const Title = styled.h1`
-  font-size: 2.8rem;
-  color: ${theme.colors.white};
-  font-family: ${theme.font.serif};
-  font-weight: 300;
-  position: relative;
-  ${media.greaterThan('medium')`
-    font-size: 11.0rem;
-    width: 31.0rem;
-    line-height: 0.95em;
-  `}
-`
-
 export const CircleWrapper = styled.div`
   display: none;
   ${media.greaterThan('medium')`
