@@ -26,7 +26,7 @@ export const PostTitle = styled.h1`
   margin-bottom: 8px;
 
   ${media.greaterThan('huge')`
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   `}
 `
 
@@ -35,6 +35,9 @@ export const PostDescription = styled.h2`
   color: ${theme.colors.gray};
   font-weight: 300;
   margin-top: 2px;
+  ${media.greaterThan('huge')`
+    font-size: 1.8rem;
+  `}
 `
 
 export const Circles = styled.div`

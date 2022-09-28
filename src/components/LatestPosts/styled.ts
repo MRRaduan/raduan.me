@@ -19,12 +19,19 @@ export const Title = styled.h1`
   color: ${theme.colors.white};
   display: block;
   font-weight: 300;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
+  ${media.greaterThan('huge')`
+    margin-bottom: 3.2rem;
+  `}
 `
 
 export const PostList = styled.div`
   display: grid;
   grid-gap: 24px;
+
+  ${media.greaterThan('huge')`
+    grid-gap: 40px;
+  `}
 
   .post__wrapper {
     transition: all 0.2s ease-in-out;
