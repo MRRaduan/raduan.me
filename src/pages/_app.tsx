@@ -7,7 +7,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>raduan.me - Hello!</title>
+        <title>Matheus Raduan - raduan.me</title>
         <link rel="shortcut icon" href="favicon.png" />
         <link rel="apple-touch-icon" href="favicon.png" />
         <meta
