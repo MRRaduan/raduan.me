@@ -1,4 +1,3 @@
-import { NodeNextRequest } from 'next/dist/server/base-http/node'
 import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
@@ -148,52 +147,17 @@ export const ContactLinksWrapper = styled.section`
     grid-template-columns: none;
     grid-template-rows: none;
   `}
-`
-
-export const SVGLink = styled.div`
-  position: absolute;
-  top: 32px;
-  right: 32px;
-`
-
-export const ContactLink = styled.div`
-  /* flex-grow: 1; */
-  background-color: ${theme.colors.black};
-  position: relative;
-  /* margin: 2px 0; */
-  padding: 40px 20px;
-  height: 100%;
-  font-size: 3.2rem;
-  font-family: ${theme.font.serif};
-  display: flex;
-  align-items: center;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+  .post__wrapper {
+    transition: all 0.2s ease-in-out;
   }
-  ${media.greaterThan('large')`
-    padding: 40px 60px;
-    font-size: 4rem;
-    &:first-child {
-      margin-top: 0;
+  &:hover {
+    .post__wrapper {
+      opacity: 0.5;
+      transition: all 0.32s ease-in-out;
     }
-  `}
-
-  > .arrow {
-    opacity: 0;
-    transform: translate3d(-30px, 5px, 0);
-    transition: all ease-in-out 0.16s;
-    display: none;
-
-    ${media.greaterThan('large')`
-      display: block;
-    `}
-  }
-
-  &:hover {
-    > .arrow {
+    .persist__opacity {
       opacity: 1;
-      transform: translate3d(0, 0, 0);
-      transition: all ease-in-out 0.16s;
+      transition: all 0.2s ease-in-out;
     }
   }
 `

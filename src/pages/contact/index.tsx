@@ -1,6 +1,7 @@
 import Layout from 'src/components/Layout'
 import * as S from './styled'
 import SVGTopRight from 'public/images/arrow-top-right.svg'
+import GetInTouchLink from 'src/components/GetInTouchLink'
 
 const contactLinks = [
   {
@@ -50,13 +51,7 @@ const GetInTouch = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <S.ContactLink>
-                {item.name}
-
-                <S.SVGLink className="arrow">
-                  <SVGTopRight />
-                </S.SVGLink>
-              </S.ContactLink>
+              <GetInTouchLink name={item.name} />
             </a>
           ))}
         </S.ContactLinksWrapper>
