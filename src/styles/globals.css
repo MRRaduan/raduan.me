@@ -13,3 +13,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fs-i {
+  font-style: italic;
+}
+
+.ff-s {
+  font-family: 'IBM Plex Serif';
+}

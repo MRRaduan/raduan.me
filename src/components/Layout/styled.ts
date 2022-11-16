@@ -49,6 +49,11 @@ export const Borders = styled.div`
     );
   background-origin: border-box;
   background-clip: content-box, border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   ${media.greaterThan('medium')` 
     border-width: 15px;
     /* overflow-y: hidden; */

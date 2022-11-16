@@ -27,6 +27,7 @@ export const Title = styled.h2`
   padding-left: 20px;
   ${media.greaterThan('large')`
     font-size: 1.6rem;
+    padding-left: 60px;
   `}
 `
 
@@ -131,6 +132,7 @@ export const CallWrapper = styled.div`
   background-color: ${theme.colors.black};
   padding-top: 40px;
   position: relative;
+  width: 100%;
 `
 
 export const ContactLinksWrapper = styled.section`
@@ -142,7 +144,7 @@ export const ContactLinksWrapper = styled.section`
   grid-gap: 2px;
   ${media.greaterThan('large')`
     margin: 0px 0 0 3px;
-    width: 100%;
+    width: 40%;
     height: 100%;
     grid-template-columns: none;
     grid-template-rows: none;

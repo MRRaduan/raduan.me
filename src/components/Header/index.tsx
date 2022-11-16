@@ -39,7 +39,7 @@ const Header = () => {
       <S.Menu>
         <S.MenuItems>
           <S.MenuItem>
-            <Link href="/about-me">
+            <Link href="/about">
               <a>about me</a>
             </Link>
           </S.MenuItem>

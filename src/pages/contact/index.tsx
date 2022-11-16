@@ -1,6 +1,5 @@
 import Layout from 'src/components/Layout'
 import * as S from './styled'
-import SVGTopRight from 'public/images/arrow-top-right.svg'
 import GetInTouchLink from 'src/components/GetInTouchLink'
 
 const contactLinks = [
