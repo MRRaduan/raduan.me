@@ -37,20 +37,48 @@ const About = () => {
       </S.Wrapper>
       <S.AboutMeContent>
         <S.AboutContentWrapper>
-          <S.Quote>
-            Everything is designed. <br />
-            Few things are designed well
-          </S.Quote>
+          <S.QuoteWrapper>
+            <S.Quote>
+              Everything is designed. <br />
+              Few things are designed well
+            </S.Quote>
+            <S.QuoteAuthor>- Brian Reed -</S.QuoteAuthor>
+          </S.QuoteWrapper>
           <p>
             I'm Matheus Raduan, a Frontend Developer based in Brazil 🇧🇷 and for
             7 years I've been solving problems by design and building web
             experiences.
           </p>
           <p>
-            I have experience since working with digital agency (audaz), passing
-            by a brazilian big tech product company as iFood (group Movile), and
-            with huge client to CI&T, attending EMEA market (Europe, the Middle
-            East and Africa).
+            I have experience since working with digital agency (
+            <a href="https://audaz.com.br/" target="_blank" rel="noreferrer">
+              audaz
+            </a>
+            ), passing by a brazilian big tech product company as{' '}
+            <a
+              href="https://institucional.ifood.com.br/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              iFood
+            </a>{' '}
+            (group{' '}
+            <a
+              href="https://www.movile.com.br/en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Movile
+            </a>
+            ), and with huge client to{' '}
+            <a
+              href="https://ciandt.com/us/en-us"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CI&T
+            </a>
+            , attending EMEA market (Europe, the Middle East and Africa).
           </p>
           <p>
             The main stack that I’ve been worked is React, Next.js, Gatsby,

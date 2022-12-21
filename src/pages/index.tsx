@@ -5,7 +5,8 @@ import * as S from './styled'
 import GetInTouch from 'src/components/GetInTouch'
 import LatestPosts from 'src/components/LatestPosts'
 
-const Home: NextPage = () => {
+const Home: NextPage = (pageProps) => {
+  console.log(pageProps)
   return (
     <>
       <Layout>

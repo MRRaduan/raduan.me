@@ -6,7 +6,10 @@ import * as S from './styled'
 const LatestPosts = () => {
   return (
     <S.Wrapper>
-      <S.Title>Latest posts</S.Title>
+      <S.TitleWrapper>
+        <S.Title>Latest posts</S.Title>
+        <Button>see all</Button>
+      </S.TitleWrapper>
       <S.PostList>
         {[0, 1].map((post) => (
           <Link href="/post" key={post}>
@@ -15,7 +18,6 @@ const LatestPosts = () => {
             </a>
           </Link>
         ))}
-        <Button>see all posts</Button>
       </S.PostList>
     </S.Wrapper>
   )

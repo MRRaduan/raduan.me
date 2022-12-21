@@ -1,7 +1,6 @@
 import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import Post from '../Post'
 
 export const Wrapper = styled.section`
   background-color: ${theme.colors.black};
@@ -13,16 +12,23 @@ export const Wrapper = styled.section`
   `}
 `
 
+export const TitleWrapper = styled.div`
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  ${media.greaterThan('huge')`
+    margin-bottom: 3.2rem;
+  `}
+`
+
 export const Title = styled.h1`
   font-size: 1.2rem;
   text-transform: uppercase;
   color: ${theme.colors.white};
   display: block;
   font-weight: 300;
-  margin-bottom: 1.6rem;
-  ${media.greaterThan('huge')`
-    margin-bottom: 3.2rem;
-  `}
 `
 
 export const PostList = styled.div`

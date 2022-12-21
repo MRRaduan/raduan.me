@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import GlobalStyles from 'src/styles/global'
 import Head from 'next/head'
+import { FirstRenderProvider } from '../context/first-render'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,7 +17,9 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <FirstRenderProvider>
+        <Component {...pageProps} />
+      </FirstRenderProvider>
     </>
   )
 }

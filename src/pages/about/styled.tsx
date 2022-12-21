@@ -189,10 +189,40 @@ export const AboutContentWrapper = styled.div`
       font-size: 2rem;
     `}
   }
+
+  a {
+    text-decoration: underline;
+    background-color: #f3ec78;
+    background-image: linear-gradient(
+      45deg,
+      ${theme.colors.blue},
+      ${theme.colors.red} 60%,
+      ${theme.colors.orange}
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+`
+
+export const QuoteWrapper = styled.div`
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  ${media.greaterThan('large')`
+    padding: 56px 0;
+  `}
+`
+
+export const QuoteAuthor = styled.p`
+  font-family: ${theme.font.serif};
 `
 
 export const Quote = styled.q`
-  padding: 24px 0;
   color: ${theme.colors.white};
   font-family: ${theme.font.serif};
   font-style: italic;
@@ -201,7 +231,6 @@ export const Quote = styled.q`
   display: block;
 
   ${media.greaterThan('large')`
-    padding: 56px 0;
     font-size: 2.8rem;
   `}
 `
