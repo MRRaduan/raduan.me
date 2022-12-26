@@ -50,6 +50,7 @@ export const Content = styled.div`
   z-index: 150;
   ${media.greaterThan('medium')`
     padding: 6rem 0 6rem 6rem;
+    height: 344px;
   `}
 `
 

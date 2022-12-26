@@ -76,16 +76,18 @@ const Hero = () => {
         />
       </S.ImageBg>
       <S.Content ref={content}>
-        <S.Hello>Hello! I&apos;m Matheus Raduan</S.Hello>
+        <S.Hello>Hello! I&apos;m Matheus Raduan,</S.Hello>
         <S.Function>
-          Created to <br /> <span className="italic">Build</span>
+          created to <br /> <span className="italic">Build</span>
           <span className="e">&nbsp;&&nbsp;</span>
           <span className="italic">Maintain</span>
         </S.Function>
         <S.ButtonWrapper>
-          <Button ref={aboutButton}>
-            <Link href="/about">about me</Link>
-          </Button>
+          <Link href="/about" passHref>
+            <a>
+              <Button ref={aboutButton}>about me</Button>
+            </a>
+          </Link>
         </S.ButtonWrapper>
       </S.Content>
       {isFirstRender && <S.Bg ref={bg} />}

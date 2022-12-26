@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import { TPost } from 'src/pages/blog'
 import * as S from './styled'
 
-const Post = () => {
+type TPostProps = TPost
+
+const Post = ({ title, description, tag, date }: TPostProps) => {
   const [isHover, setIsHover] = useState(false)
 
   return (
@@ -16,13 +19,11 @@ const Post = () => {
           <div className="circle red"></div>
           <div className="circle white"></div>
         </S.Circles>
-        JS &nbsp;
-        <S.PostDate> - 07 de setembro de 2022</S.PostDate>
+        {tag} &nbsp;
+        <S.PostDate> - {date}</S.PostDate>
       </S.PostCategory>
-      <S.PostTitle>Improve your motion with Styled Components</S.PostTitle>
-      <S.PostDescription>
-        How use StyledComponents to animate in smart way
-      </S.PostDescription>
+      <S.PostTitle>{title}</S.PostTitle>
+      <S.PostDescription>{description}</S.PostDescription>
     </S.Wrapper>
   )
 }

@@ -45,24 +45,25 @@ const About = () => {
             <S.QuoteAuthor>- Brian Reed -</S.QuoteAuthor>
           </S.QuoteWrapper>
           <p>
-            I'm Matheus Raduan, a Frontend Developer based in Brazil 🇧🇷 and for
-            7 years I've been solving problems by design and building web
-            experiences.
+            Hi! <br /> <br /> I'm Matheus Raduan, and for 7 years I've been
+            solving problems designing and building web experiences as front-end
+            developer living in Brazil 🇧🇷
           </p>
           <p>
-            I have experience since working with digital agency (
+            I have experience since working as indie developer, going to a
+            digital agency (
             <a href="https://audaz.com.br/" target="_blank" rel="noreferrer">
               audaz
             </a>
-            ), passing by a brazilian big tech product company as{' '}
+            ), passing by a brazilian big tech product company (
             <a
               href="https://institucional.ifood.com.br/"
               target="_blank"
               rel="noreferrer"
             >
               iFood
-            </a>{' '}
-            (group{' '}
+            </a>
+            &nbsp;and group{' '}
             <a
               href="https://www.movile.com.br/en"
               target="_blank"
@@ -78,7 +79,18 @@ const About = () => {
             >
               CI&T
             </a>
-            , attending EMEA market (Europe, the Middle East and Africa).
+            , attending EMEA market.
+          </p>
+          <p>
+            Currently I work for&nbsp;
+            <a
+              href="https://www.whiteprompt.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              WhitePrompt
+            </a>
+            &nbsp;as Software Engineer.
           </p>
           <p>
             The main stack that I’ve been worked is React, Next.js, Gatsby,
@@ -103,8 +115,8 @@ const About = () => {
             When I was coursing the techinician degree of informatics (in my
             high school), because the fame of my illustrations one of my arts
             was ellected to be launched as a t-shirt print to a digital company
-            called Camiseteria (if it were in english would be something like
-            T-shirtting ).
+            called Camiseteria (if this name were in english would be something
+            like <i>T-shirtting</i>).
           </p>
           <p>
             This was a great achievement to me, I was only with 15 years and
@@ -128,12 +140,12 @@ const About = () => {
               <h2>The game change</h2>
               <p>
                 As I mentioned, in that time I already coursed my techinician
-                degree of informatics. <br /> So I was open too to work with
+                degree of informatics. <br /> So I also was open to work with
                 some tech stuff, and because of great friendship of a brother of
-                the church that influenced me a lot, I started to create
+                the church, that influenced me a lot, I started to create
                 websites and work as freelance to him for one entire year.{' '}
                 <br /> It was awesome and a great experience. He really invested
-                in my carrer.
+                in my carrer (thanks Diego Neves 🥲)
               </p>
               <p>
                 That was the way that found the place where I could put the two
@@ -160,9 +172,9 @@ const About = () => {
           </S.HistoryContentWrapper>
           <h1>How I face the work</h1>
           <p>
-            I believe that we always work for someone and the Person I work for
-            is bigger than my own work. The question you should ask me is, who
-            do you work for?
+            I believe that we always work for someone, and the Person that I
+            work for is bigger than my own work. The question that you may ask
+            me is: who do you work for?
           </p>
         </S.AboutContentWrapper>
       </S.AboutMeContent>

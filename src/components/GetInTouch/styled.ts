@@ -9,6 +9,11 @@ export const Title = styled.h1`
   font-weight: 300;
   position: relative;
   ${media.greaterThan('medium')`
+    font-size: 5.2rem;
+    width: 31.0rem;
+    line-height: 0.95em;
+  `}
+  ${media.greaterThan('large')`
     font-size: 11.0rem;
     width: 31.0rem;
     line-height: 0.95em;
