@@ -2,7 +2,10 @@ import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.section``
+export const Wrapper = styled.section`
+  /* background-color: ${theme.colors.black}; */
+  padding: 12px 20px;
+`
 
 export const PostDate = styled.time``
 
@@ -23,7 +26,7 @@ export const PostTitle = styled.h1`
   font-size: 2.2rem;
   color: ${theme.colors.white};
   font-weight: 300;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 
   ${media.greaterThan('huge')`
     font-size: 2.8rem;

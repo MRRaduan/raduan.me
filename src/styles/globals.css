@@ -25,3 +25,7 @@ a {
 .ff-s {
   font-family: 'IBM Plex Serif';
 }
+
+.b-red {
+  border: solid 1px red;
+}

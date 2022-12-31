@@ -1,6 +1,10 @@
+import Link from 'next/link'
 import Layout from 'src/components/Layout'
+import Post from 'src/components/Post'
+import ShowcasePost from 'src/components/ShowcasePost'
 
 import { getSortedPostsData } from 'src/lib/posts'
+import * as S from './styled'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -24,20 +28,47 @@ type PostsProps = {
 }
 
 const Posts = ({ allPostsData }: PostsProps) => {
+  const showCasePosts = allPostsData.slice(0, 2)
+  const ramainingPosts = allPostsData.slice(2)
   return (
     <Layout>
-      <h2>Blog</h2>
-      <ul>
-        {allPostsData.map(({ id, date, title }) => (
-          <li key={id}>
-            {title}
-            <br />
-            {id}
-            <br />
-            {date}
-          </li>
-        ))}
-      </ul>
+      <S.BlogWrapper>
+        <S.BlogHero>
+          <S.BlogHeroPageTitle>blog</S.BlogHeroPageTitle>
+          <S.BlogHeroTitleWrapper>
+            <S.BlogHeroTitle>
+              Some tech stuff <br /> and another <br /> things
+            </S.BlogHeroTitle>
+            <S.BlogHeroText>
+              Lorem ipsum dolor <br /> sit amet, consectetur
+            </S.BlogHeroText>
+          </S.BlogHeroTitleWrapper>
+        </S.BlogHero>
+        <S.ShowcasePostsWrapper>
+          <S.ShowcasePostList>
+            {showCasePosts.map((props) => (
+              <Link href={`/blog/${props.id}`} key={props.id}>
+                <S.ShowcasePostItem key={props.id}>
+                  <ShowcasePost {...props} />
+                </S.ShowcasePostItem>
+              </Link>
+            ))}
+          </S.ShowcasePostList>
+        </S.ShowcasePostsWrapper>
+      </S.BlogWrapper>
+      <S.RemainingPosts>
+        <S.ReaminingPostsList>
+          {ramainingPosts.map((props) => (
+            <Link href={`/blog/${props.id}`} key={props.id}>
+              <a>
+                <S.ReaminingPostsItem key={props.id}>
+                  <Post {...props} />
+                </S.ReaminingPostsItem>
+              </a>
+            </Link>
+          ))}
+        </S.ReaminingPostsList>
+      </S.RemainingPosts>
     </Layout>
   )
 }

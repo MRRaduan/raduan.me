@@ -20,7 +20,7 @@ const LatestPosts = ({ allPostsData }: TLatestPostsProps) => {
         </Link>
       </S.TitleWrapper>
       <S.PostList>
-        {allPostsData.map((post) => (
+        {allPostsData.slice(0, 2).map((post) => (
           <Link href={`/blog/${post.id}`} key={post.id}>
             <a>
               <Post {...post} />

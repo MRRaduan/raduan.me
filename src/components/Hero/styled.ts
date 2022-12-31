@@ -4,9 +4,13 @@ import media from 'styled-media-query'
 
 export const Section = styled.section`
   width: 100%;
-  height: 357px;
+  min-height: 357px;
+  height: 100%;
   background-color: ${theme.colors.black};
   /* position: relative; */
+  ${media.greaterThan('medium')`
+    height: auto;
+  `}
   > h1 {
     position: relative;
   }

@@ -6,13 +6,14 @@ export const Wrapper = styled.section`
   background-color: ${theme.colors.black};
   width: 100%;
   height: 100%;
-  padding: 40px 20px;
+  padding: 40px 0px;
   ${media.greaterThan('medium')`
-    padding: 40px 60px;
+    padding: 40px 0px;
   `}
 `
 
 export const TitleWrapper = styled.div`
+  padding: 0 20px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -20,6 +21,7 @@ export const TitleWrapper = styled.div`
   margin-bottom: 1.6rem;
   ${media.greaterThan('huge')`
     margin-bottom: 3.2rem;
+    padding: 0 60px;
   `}
 `
 
@@ -33,7 +35,10 @@ export const Title = styled.h1`
 
 export const PostList = styled.div`
   display: grid;
-  grid-gap: 24px;
+
+  ${media.greaterThan('large')`
+    padding: 0 40px;
+  `}
 
   ${media.greaterThan('huge')`
     grid-gap: 40px;
