@@ -9,9 +9,10 @@ export const Wrapper = styled.div`
   position: relative;
   background-color: ${theme.colors.black};
   background-image: linear-gradient(to right, #000 40%, #212121);
+  padding: 18px 0;
   ${media.greaterThan('large')`
-    height: 100%;
     padding: 20px;
+    height: 100%;
   `}
 `
 

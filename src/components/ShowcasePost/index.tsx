@@ -9,10 +9,7 @@ const ShowcasePost = (props: TShowcasePostProps) => {
   return (
     <S.Wrapper>
       <S.ContentWrapper>
-        <Post {...props} />
-        <S.ButtonWrapper>
-          <Button>read post</Button>
-        </S.ButtonWrapper>
+        <Post {...props} isShowcase />
       </S.ContentWrapper>
       <S.ImgWrapper>
         <Image src="/images/nqn.jpeg" layout="fill" objectFit="cover" />

@@ -2,11 +2,6 @@ import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.section`
-  /* background-color: ${theme.colors.black}; */
-  padding: 12px 20px;
-`
-
 export const PostDate = styled.time``
 
 export const PostCategory = styled.div`
@@ -18,6 +13,12 @@ export const PostCategory = styled.div`
   align-items: center;
   ${media.greaterThan('medium')`
     font-size: 1.6rem;
+  `}
+`
+
+export const PostDescriptionWrapper = styled.div`
+  ${media.greaterThan('large')`
+    margin-top: 70px;
   `}
 `
 
@@ -63,4 +64,44 @@ export const Circles = styled.div`
   > .blue {
     border-color: ${theme.colors.blue};
   }
+`
+
+export const Wrapper = styled.section`
+  /* background-color: ${theme.colors.black}; */
+  padding: 12px 20px;
+
+  &.--showcase {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ${PostTitle} {
+      font-size: 3.2rem;
+      font-family: ${theme.font.sans};
+    }
+
+    ${media.greaterThan('large')` 
+      justify-content: center;
+      ${PostTitle}{
+        font-size: 3.8rem;
+      }
+      ${PostCategory}{
+        font-size: 2.2rem;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+      }
+      .circle {
+        width: 15px;
+        height: 15px;
+        border-width: 2px;
+      }
+      
+    `}
+  }
+`
+
+export const ButtonWrapper = styled.div`
+  margin-top: 20px;
 `

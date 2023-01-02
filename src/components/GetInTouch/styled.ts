@@ -63,6 +63,7 @@ export const Wrapper = styled.a`
     }
   }
 `
+
 export const CircleWrapper = styled.div`
   display: none;
   ${media.greaterThan('medium')`

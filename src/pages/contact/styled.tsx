@@ -6,12 +6,12 @@ export const ContactHero = styled.section`
   background-color: ${theme.colors.black};
   width: 100%;
   height: 100%;
-  padding: 0px 20px 75px 20px;
+  padding: 0px 20px 95px 20px;
   position: relative;
 
   ${media.greaterThan('large')`
     padding: 52px 60px;
-    height: calc(100vh - 91px);
+    height: calc(100vh - 102px);
     display: flex;
     align-items: center;
   `}
@@ -130,9 +130,13 @@ export const ContentWrapper = styled.div`
 
 export const CallWrapper = styled.div`
   background-color: ${theme.colors.black};
-  padding-top: 40px;
+  padding-top: 28px;
   position: relative;
   width: 100%;
+
+  ${media.greaterThan('large')`
+    padding-top: 52px;
+  `}
 `
 
 export const ContactLinksWrapper = styled.section`

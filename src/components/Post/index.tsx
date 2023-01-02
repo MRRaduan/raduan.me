@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import { TPost } from 'src/pages/blog'
+import Button from '../Button'
 import * as S from './styled'
 
-type TPostProps = TPost
+type TPostProps = TPost & { isShowcase?: boolean }
 
-const Post = ({ title, description, tag, date }: TPostProps) => {
+const Post = ({ title, description, tag, date, isShowcase }: TPostProps) => {
   const [isHover, setIsHover] = useState(false)
 
   return (
     <S.Wrapper
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      className={`post__wrapper ${isHover ? 'persist__opacity' : ''}`}
+      className={`post__wrapper ${isHover ? 'persist__opacity' : ''} ${
+        isShowcase ? '--showcase' : ' '
+      }`}
     >
       <S.PostCategory>
         <S.Circles>
@@ -22,8 +25,15 @@ const Post = ({ title, description, tag, date }: TPostProps) => {
         {tag} &nbsp;
         <S.PostDate> - {date}</S.PostDate>
       </S.PostCategory>
-      <S.PostTitle>{title}</S.PostTitle>
-      <S.PostDescription>{description}</S.PostDescription>
+      <S.PostDescriptionWrapper>
+        <S.PostTitle>{title}</S.PostTitle>
+        <S.PostDescription>{description}</S.PostDescription>
+        {isShowcase && (
+          <S.ButtonWrapper>
+            <Button>read post</Button>
+          </S.ButtonWrapper>
+        )}
+      </S.PostDescriptionWrapper>
     </S.Wrapper>
   )
 }

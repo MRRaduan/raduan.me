@@ -1,6 +1,6 @@
 ---
-title: 'Go to italy'
-description: 'asdasdadssaa as das das das da da s'
+title: 'Usando Netlify CMS com NextJS, Vercel e GitHub'
+description: 'Aprenda como criar esse efeito em poucas linhas manipulando o Canvas'
 date: '2020-01-07'
 tag: 'Gatbsy'
 ---

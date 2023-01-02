@@ -11,9 +11,9 @@ export const BlogWrapper = styled.div`
 
 export const BlogHero = styled.section`
   background-color: ${theme.colors.black};
-  padding: 40px 20px 80px 20px;
+  padding: 28px 20px 80px 20px;
   ${media.greaterThan('large')`
-    padding: 40px 40px;
+    padding: 40px 60px;
     height: 100vh;
     width: 50%;
     position: sticky;
@@ -32,8 +32,8 @@ export const BlogHeroPageTitle = styled.h1`
   ${media.greaterThan('large')`
     font-size: 1.6rem;
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 52px;
+    left: 60px;
   `}
 `
 
