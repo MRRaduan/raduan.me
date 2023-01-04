@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { TPost } from 'src/pages/blog'
 import Button from '../Button'
-import Post from '../Post'
+import PostLink from '../PostLink'
 import * as S from './styled'
 
 type TLatestPostsProps = {
@@ -23,7 +23,7 @@ const LatestPosts = ({ allPostsData }: TLatestPostsProps) => {
         {allPostsData.slice(0, 2).map((post) => (
           <Link href={`/blog/${post.id}`} key={post.id}>
             <a>
-              <Post {...post} />
+              <PostLink {...post} />
             </a>
           </Link>
         ))}

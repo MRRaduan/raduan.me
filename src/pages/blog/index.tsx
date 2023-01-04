@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Layout from 'src/components/Layout'
-import Post from 'src/components/Post'
+import PostLink from 'src/components/PostLink'
 import ShowcasePost from 'src/components/ShowcasePost'
 
 import { getSortedPostsData } from 'src/lib/posts'
@@ -62,7 +62,7 @@ const Posts = ({ allPostsData }: PostsProps) => {
             <Link href={`/blog/${props.id}`} key={props.id}>
               <a>
                 <S.ReaminingPostsItem key={props.id}>
-                  <Post {...props} />
+                  <PostLink {...props} />
                 </S.ReaminingPostsItem>
               </a>
             </Link>

@@ -3,9 +3,15 @@ import { TPost } from 'src/pages/blog'
 import Button from '../Button'
 import * as S from './styled'
 
-type TPostProps = TPost & { isShowcase?: boolean }
+type TPostLinkProps = TPost & { isShowcase?: boolean }
 
-const Post = ({ title, description, tag, date, isShowcase }: TPostProps) => {
+const PostLink = ({
+  title,
+  description,
+  tag,
+  date,
+  isShowcase,
+}: TPostLinkProps) => {
   const [isHover, setIsHover] = useState(false)
 
   return (
@@ -38,4 +44,4 @@ const Post = ({ title, description, tag, date, isShowcase }: TPostProps) => {
   )
 }
 
-export default Post
+export default PostLink
