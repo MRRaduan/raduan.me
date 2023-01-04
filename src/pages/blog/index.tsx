@@ -21,6 +21,7 @@ export type TPost = {
   title: string
   description: string
   tag: string
+  thumbnail: string
 }
 
 type PostsProps = {

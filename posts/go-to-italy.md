@@ -3,6 +3,7 @@ title: 'Usando Netlify CMS com NextJS, Vercel e GitHub'
 description: 'Aprenda como criar esse efeito em poucas linhas manipulando o Canvas'
 date: '2020-01-07'
 tag: 'Gatbsy'
+thumbnail: /images/nqn.jpeg
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.

@@ -1,4 +1,5 @@
 import Layout from 'src/components/Layout'
+import PostHero from 'src/components/PostHero'
 import { TPost } from '.'
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
@@ -27,6 +28,7 @@ type TPostProps = {
 const Post = ({ postData }: TPostProps) => {
   return (
     <Layout>
+      <PostHero {...postData} />
       <h1>{postData.title}</h1>
       <br />
       {postData.id}
