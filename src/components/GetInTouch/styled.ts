@@ -42,24 +42,24 @@ export const Wrapper = styled.a`
     to {
       transform: rotate(360deg);
     }
-    }
   }
 
-  .circle-get-in-touch_svg__circle__inner, .circle-get-in-touch_svg__circle__out  {
-    transition: all .2s ease-in-out;
+  .circle-get-in-touch_svg__circle__inner,
+  .circle-get-in-touch_svg__circle__out {
+    transition: all 0.2s ease-in-out;
   }
   &:hover {
     .circle-get-in-touch_svg__circle__inner {
       animation: rotation 5s infinite linear;
       animation-fill-mode: forwards;
       transform-origin: center;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
     .circle-get-in-touch_svg__circle__out {
-      animation: rotation 9s infinite linear ;
+      animation: rotation 9s infinite linear;
       animation-fill-mode: forwards;
       transform-origin: center;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
   }
 `
