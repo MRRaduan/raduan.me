@@ -16,11 +16,7 @@ export const PostCategory = styled.div`
   `}
 `
 
-export const PostDescriptionWrapper = styled.div`
-  ${media.greaterThan('large')`
-    margin-top: 70px;
-  `}
-`
+export const PostDescriptionWrapper = styled.div``
 
 export const PostTitle = styled.h1`
   font-family: ${theme.font.serif};
@@ -91,6 +87,9 @@ export const Wrapper = styled.section`
         position: absolute;
         top: 18px;
         left: 20px;
+      }
+      ${PostDescriptionWrapper} {
+        margin-top: 70px;
       }
       .circle {
         width: 15px;
