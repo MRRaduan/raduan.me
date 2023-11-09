@@ -9,6 +9,6 @@ export const Wrapper = styled.div`
   ${media.greaterThan('large')`
     margin-top: 3px;
     grid-gap: 3px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
   `}
 `

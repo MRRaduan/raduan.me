@@ -4,16 +4,15 @@ import PostLink from '../PostLink'
 import * as S from './styled'
 
 type TShowcasePostProps = TPost
-const ShowcasePost = (props: TShowcasePostProps) => {
-  console.log(props.thumbnail)
+const ShowcasePost = (props) => {
   return (
     <S.Wrapper>
       <S.ContentWrapper>
-        <PostLink {...props} isShowcase />
+        <PostLink {...props} isShowCase />
       </S.ContentWrapper>
       <S.ImgWrapper>
-        {props.thumbnail && (
-          <Image src={`${props.thumbnail}`} layout="fill" objectFit="cover" />
+        {props.image && (
+          <Image src={props.image.url} layout="fill" objectFit="cover" />
         )}
       </S.ImgWrapper>
     </S.Wrapper>

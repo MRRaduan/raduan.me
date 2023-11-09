@@ -1,33 +1,29 @@
-import type { NextPage } from 'next'
 import Hero from 'src/components/Hero'
 import Layout from '../components/Layout'
 import * as S from './styled'
 import GetInTouch from 'src/components/GetInTouch'
 import LatestPosts from 'src/components/LatestPosts'
-import { getSortedPostsData } from 'src/lib/posts'
-import { TPost } from './blog'
+import { getAllPosts } from 'src/utils/contentful'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const posts = await getAllPosts()
   return {
     props: {
-      allPostsData,
+      posts: posts,
     },
   }
 }
 
-type THomeProps = {
-  allPostsData: TPost[]
-}
+const Home = (props) => {
+  const { posts } = props
 
-const Home: NextPage<THomeProps> = ({ allPostsData }: THomeProps) => {
   return (
     <>
       <Layout>
         <Hero />
         <S.Wrapper>
           <GetInTouch />
-          <LatestPosts allPostsData={allPostsData} />
+          <LatestPosts posts={posts} />
         </S.Wrapper>
       </Layout>
     </>

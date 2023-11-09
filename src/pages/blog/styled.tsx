@@ -15,11 +15,12 @@ export const BlogHero = styled.section`
   ${media.greaterThan('large')`
     padding: 40px 60px;
     height: 100vh;
-    width: 50%;
+    width: 60%;
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
   `}
 `
 export const BlogHeroPageTitle = styled.h1`
@@ -50,6 +51,9 @@ export const BlogHeroTitle = styled.h1`
   font-family: ${theme.font.serif};
   font-weight: 300;
   ${media.greaterThan('medium')`
+    font-size: 5.6rem;
+  `}
+  ${media.greaterThan('huge')`
     font-size: 6rem;
   `}
 `

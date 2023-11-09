@@ -20,7 +20,7 @@ export const TitleWrapper = styled.div`
   align-items: center;
   margin-bottom: 1.6rem;
   ${media.greaterThan('huge')`
-    margin-bottom: 3.2rem;
+    margin-bottom: 2rem;
     padding: 0 60px;
   `}
 `
@@ -41,7 +41,7 @@ export const PostList = styled.div`
   `}
 
   ${media.greaterThan('huge')`
-    grid-gap: 40px;
+    grid-gap: 20px;
   `}
 
   .post__wrapper {

@@ -12,8 +12,8 @@ const contactLinks = [
     link: 'https://github.com/MRRaduan',
   },
   {
-    name: 'Twitter',
-    link: 'https://twitter.com/MRRaduan',
+    name: 'X',
+    link: 'https://x.com/MRRaduan',
   },
   {
     name: 'Email',

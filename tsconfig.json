@@ -17,6 +17,6 @@
     "incremental": true,
     "baseUrl": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Cursor/utils/index.js", "src/hooks/useCursor/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Cursor/utils/index.js", "src/hooks/useCursor/index.js", "src/pages/blog/[slug].jsx", "src/components/PostLink/index.jsx"],
   "exclude": ["node_modules"]
 }

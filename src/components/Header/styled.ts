@@ -36,9 +36,9 @@ export const Header = styled.header`
     left: 15px;
     border-radius: 15px 0px 0 15px;
     height: calc(100vh - 30px);
-    width: max-content;
+    width: 320px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 40px;
     margin-bottom:0;
   `}
@@ -61,7 +61,7 @@ export const Avatar = styled.div`
     margin-bottom: 10px;
   `}
   &:hover {
-    transform: scale3d(1.6, 1.6, 1.6);
+    transform: scale3d(1.2, 1.2, 1.2);
     transition: 0.16s;
 
     & ~ .logo {
@@ -72,6 +72,9 @@ export const Avatar = styled.div`
   }
 
   & ~ .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: 0.12s;
   }
 `
@@ -82,17 +85,36 @@ export const Role = styled.span`
   color: ${theme.colors.white};
   font-family: ${theme.font.serif};
   ${media.greaterThan('medium')`
+  font-size: 1.6rem;
+  color: ${theme.colors.white};
     display: block;
     margin-top: 5px;
   `}
 `
 
-export const Menu = styled.nav``
+export const RoleDescription = styled.p`
+  display: none;
+  ${media.greaterThan('medium')`
+    display: block;
+    margin-top: 16px;
+    color: ${theme.colors.gray};
+    text-align: center;
+    font-family: ${theme.font.sans};
+    font-size: 1.6rem;
+  `}
+`
+
+export const Menu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 export const MenuItems = styled.ul`
   display: flex;
   ${media.greaterThan('medium')`
     flex-direction: column;
+    align-items: center;
   `}
 `
 

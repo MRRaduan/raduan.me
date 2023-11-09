@@ -27,7 +27,7 @@ export const Layout = styled.div`
     height: 100%;
       display: flex;
       margin-top: 0;
-      margin-left: 190px;
+      margin-left: 323px;
     `}
   }
 `

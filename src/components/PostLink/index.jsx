@@ -1,17 +1,11 @@
 import { useState } from 'react'
-import { TPost } from 'src/pages/blog'
 import Button from '../Button'
 import * as S from './styled'
+import { formatDate } from 'src/utils'
 
-type TPostLinkProps = TPost & { isShowcase?: boolean }
+const PostLink = ({ title, description, sys, tagCollection, isShowCase }) => {
+  const postDate = formatDate(sys.publishedAt)
 
-const PostLink = ({
-  title,
-  description,
-  tag,
-  date,
-  isShowcase,
-}: TPostLinkProps) => {
   const [isHover, setIsHover] = useState(false)
 
   return (
@@ -19,7 +13,7 @@ const PostLink = ({
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       className={`post__wrapper ${isHover ? 'persist__opacity' : ''} ${
-        isShowcase ? '--showcase' : ' '
+        isShowCase ? '--showcase' : ' '
       }`}
     >
       <S.PostCategory>
@@ -28,13 +22,13 @@ const PostLink = ({
           <div className="circle red"></div>
           <div className="circle white"></div>
         </S.Circles>
-        {tag} &nbsp;
-        <S.PostDate> - {date}</S.PostDate>
+        {tagCollection.items[0].tagName} &nbsp;
+        <S.PostDate> - {postDate}</S.PostDate>
       </S.PostCategory>
       <S.PostDescriptionWrapper>
         <S.PostTitle>{title}</S.PostTitle>
         <S.PostDescription>{description}</S.PostDescription>
-        {isShowcase && (
+        {isShowCase && (
           <S.ButtonWrapper>
             <Button>read post</Button>
           </S.ButtonWrapper>

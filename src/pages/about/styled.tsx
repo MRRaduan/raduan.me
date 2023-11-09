@@ -16,7 +16,7 @@ export const ImgWrapper = styled.div`
   left: 0;
 
   ${media.greaterThan('large')`
-    max-width: 30vw;
+    max-width: 35vw;
     left: inherit;
     right: 0;
   `}

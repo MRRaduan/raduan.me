@@ -83,13 +83,15 @@ export const Wrapper = styled.section`
         font-size: 3.8rem;
       }
       ${PostCategory}{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         position: absolute;
         top: 18px;
         left: 20px;
       }
       ${PostDescriptionWrapper} {
         margin-top: 70px;
+        width: 100%;
+        max-width: 400px;
       }
       .circle {
         width: 15px;

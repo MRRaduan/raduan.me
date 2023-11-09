@@ -14,9 +14,9 @@ const Header = () => {
             onMouseLeave={() => setIsAvatarHover(false)}
           >
             {isAvatarHover ? (
-              <Image src="/images/avatar-smile.png" width={60} height={60} />
+              <Image src="/images/avatar-smile.png" width={100} height={100} />
             ) : (
-              <Image src="/images/avatar.png" width={60} height={60} />
+              <Image src="/images/avatar.png" width={100} height={100} />
             )}
           </S.Avatar>
           <div className="logo">
@@ -33,6 +33,9 @@ const Header = () => {
               />
             </svg>
             <S.Role>Frontend Engineer</S.Role>
+            <S.RoleDescription>
+              I solve problems by design and building web experiences
+            </S.RoleDescription>
           </div>
         </S.Profile>
       </Link>
