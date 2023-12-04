@@ -25,10 +25,32 @@ export const PostContentWrapper = styled.div`
   h2 {
     font-family: ${theme.font.serif};
     line-height: 1.6em;
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+
+  h3,
+  h4 {
+    font-family: ${theme.font.serif};
+    margin-top: 3rem;
   }
 
   p {
     margin-top: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
+    background-color: #f3ec78;
+    background-image: linear-gradient(
+      45deg,
+      ${theme.colors.blue},
+      ${theme.colors.red} 60%,
+      ${theme.colors.orange}
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 `

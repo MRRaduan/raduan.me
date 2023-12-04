@@ -7,7 +7,7 @@ const Cursor = () => {
 
   useEffect(() => {
     const cursor = new CursorLogic(cursorRef.current)
-    ;[...document.querySelectorAll('a, button')].forEach((el) => {
+    ;[...document.querySelectorAll('a, button, iframe')].forEach((el) => {
       el.addEventListener('mouseenter', () => cursor.emit('enter'))
       el.addEventListener('mouseleave', () => cursor.emit('leave'))
     })

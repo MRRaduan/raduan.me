@@ -45,7 +45,7 @@ const About = () => {
             <S.QuoteAuthor>- Brian Reed -</S.QuoteAuthor>
           </S.QuoteWrapper>
           <p>
-            Hi! <br /> <br /> I'm Matheus Raduan, and for 7 years I've been
+            Hi! <br /> <br /> I'm Matheus Raduan, and for 8 years I've been
             solving problems designing and building web experiences as front-end
             developer living in Brazil 🇧🇷
           </p>
@@ -82,7 +82,7 @@ const About = () => {
             , attending EMEA market.
           </p>
           <p>
-            Currently I work for&nbsp;
+            My last contribution was for&nbsp;
             <a
               href="https://www.whiteprompt.com/"
               target="_blank"

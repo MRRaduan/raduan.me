@@ -33,7 +33,7 @@ export async function getPostBySlug(slug) {
   const { data } = await apolloClient.query({
     query: gql`
       query GetPostBySlug($slug: String!) {
-        postCollection(where: { slug: $slug }) {
+        postCollection(limit: 5, where: { slug: $slug }) {
           items {
             title
             description
@@ -51,6 +51,33 @@ export async function getPostBySlug(slug) {
             }
             content {
               json
+              links {
+                entries {
+                  block {
+                    sys {
+                      id
+                    }
+                    __typename
+                    ... on Iframe {
+                      title
+                      iframeCode
+                    }
+                  }
+                }
+                assets {
+                  block {
+                    sys {
+                      id
+                    }
+                    url
+                    title
+                    width
+                    height
+                    description
+                    contentType
+                  }
+                }
+              }
             }
           }
         }
