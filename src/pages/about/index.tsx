@@ -93,7 +93,7 @@ const About = () => {
             &nbsp;as Software Engineer.
           </p>
           <p>
-            The main stack that I’ve been worked is React, Next.js, Gatsby,
+            The main stack that I&apos;ve been worked is React, Next.js, Gatsby,
             Vue.js, Typescript, React Query, CSS-in-JS, Jest (TDD), Material UI,
             Contentful and designing REST APIs.
           </p>
