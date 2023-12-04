@@ -21,7 +21,7 @@ const About = () => {
         <S.TextWrapper>
           <S.TitleWrapper>
             <S.Title>
-              &nbsp; &nbsp; I'm an
+              &nbsp; &nbsp; I&apos;m an
               <span className="fw-b fs-i ff-s"> ordinary</span> guy, <br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; with an
               <span className="fw-b fs-i ff-s"> ordinary</span> life <br /> who
@@ -45,9 +45,9 @@ const About = () => {
             <S.QuoteAuthor>- Brian Reed -</S.QuoteAuthor>
           </S.QuoteWrapper>
           <p>
-            Hi! <br /> <br /> I'm Matheus Raduan, and for 8 years I've been
-            solving problems designing and building web experiences as front-end
-            developer living in Brazil 🇧🇷
+            Hi! <br /> <br /> I&apos;m Matheus Raduan, and for 8 years I&apos;ve
+            been solving problems designing and building web experiences as
+            front-end developer living in Brazil 🇧🇷
           </p>
           <p>
             I have experience since working as indie developer, going to a
@@ -63,7 +63,7 @@ const About = () => {
             >
               iFood
             </a>
-            &nbsp;and group{' '}
+            &nbsp;and group
             <a
               href="https://www.movile.com.br/en"
               target="_blank"
@@ -71,7 +71,7 @@ const About = () => {
             >
               Movile
             </a>
-            ), and with huge client to{' '}
+            ), and with huge client to
             <a
               href="https://ciandt.com/us/en-us"
               target="_blank"
@@ -98,8 +98,8 @@ const About = () => {
             Contentful and designing REST APIs.
           </p>
           <p>
-            Recently I've been focusing on Clean Architecture for the frontend
-            environment.
+            Recently I&apos;ve been focusing on Clean Architecture for the
+            frontend environment.
           </p>
           <p>Nice to meet you! 😄</p>
           <h1>A little bit about my history</h1>
@@ -107,9 +107,9 @@ const About = () => {
           <p> I grew up drawing a lot, since when I was a kid.</p>
           <p>
             In the highschool I almost reprove an specific class because I only
-            draw in the school 😅. But don't take me wrong! Give me a chance, I
-            faced this seriously, I was decided to be a illustrator or work with
-            design. For the good, some results start to show earlier.
+            draw in the school 😅. But don&apos;t take me wrong! Give me a
+            chance, I faced this seriously, I was decided to be a illustrator or
+            work with design. For the good, some results start to show earlier.
           </p>
           <p>
             When I was coursing the techinician degree of informatics (in my
@@ -143,7 +143,7 @@ const About = () => {
                 degree of informatics. <br /> So I also was open to work with
                 some tech stuff, and because of great friendship of a brother of
                 the church, that influenced me a lot, I started to create
-                websites and work as freelance to him for one entire year.{' '}
+                websites and work as freelance to him for one entire year.
                 <br /> It was awesome and a great experience. He really invested
                 in my carrer (thanks Diego Neves 🥲)
               </p>
