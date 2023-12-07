@@ -1,12 +1,7 @@
 import Link from 'next/link'
-import { TPost } from 'src/pages/blog'
 import Button from '../Button'
 import PostLink from '../PostLink'
 import * as S from './styled'
-
-type TLatestPostsProps = {
-  posts: TPost[]
-}
 
 const LatestPosts = ({ posts }) => {
   return (
