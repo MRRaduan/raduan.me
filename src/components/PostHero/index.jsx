@@ -1,10 +1,7 @@
 import * as S from './styled'
 
 import SVGLines from 'public/images/lines-horizontal.svg'
-import { TPost } from 'src/pages/blog'
 import { formatDate } from 'src/utils'
-
-type TPostHeroProps = TPost
 
 const PostHero = ({ title, image, description, tagCollection, sys }) => {
   return (
