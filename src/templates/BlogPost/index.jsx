@@ -1,5 +1,6 @@
 import Layout from 'src/components/Layout'
 import PostHero from 'src/components/PostHero'
+import Image from 'next/image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import * as S from './styled'
@@ -23,10 +24,11 @@ function renderOptions(links) {
           case 'image/jpeg':
           case 'image/png':
             return (
-              <img
-                src={asset.url}
+              <Image
                 height={asset.height}
                 width={asset.width}
+                src={asset.url}
+                layout="responsive"
                 alt={asset.description}
               />
             )
