@@ -8,10 +8,10 @@ const Layout = ({ children }) => {
     <>
       <S.Layout>
         {/* <S.Borders> */}
-        {/* <div className="layout-direction"> */}
-        <Header />
-        <S.ContentWrapper>{children}</S.ContentWrapper>
-        {/* </div> */}
+        <div className="layout-direction">
+          <Header />
+          <S.ContentWrapper>{children}</S.ContentWrapper>
+        </div>
         {/* </S.Borders> */}
         <Cursor />
       </S.Layout>
