@@ -22,7 +22,7 @@ export const Layout = styled.div`
 
   .layout-direction {
     margin-top: 73px;
-    height: calc(100% - 73px);
+    /* height: calc(100% - 73px); */
     ${media.greaterThan('medium')` 
     height: 100%;
       display: flex;
