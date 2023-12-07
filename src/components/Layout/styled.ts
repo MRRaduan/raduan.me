@@ -22,7 +22,7 @@ export const Layout = styled.div`
 
   .layout-direction {
     margin-top: 73px;
-    /* height: calc(100% - 73px); */
+    height: calc(100% - 73px);
     ${media.greaterThan('medium')` 
     height: 100%;
       display: flex;
@@ -64,6 +64,6 @@ export const Borders = styled.div`
 export const ContentWrapper = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 `
