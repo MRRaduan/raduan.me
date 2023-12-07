@@ -22,8 +22,8 @@ const Hero = () => {
     if (isFirstRender) {
       tl.fromTo(
         content.current,
-        { y: 200 },
-        { y: 0, zIndex: 151, ease: 'Power1.easeInOut' },
+        { y: 200, zIndex: 151 },
+        { y: 0, zIndex: 140, ease: 'Power1.easeInOut' },
         2
       )
         .to(

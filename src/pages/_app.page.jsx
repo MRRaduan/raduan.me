@@ -14,6 +14,7 @@ function App({ Component, pageProps }) {
           name="description"
           content="I'm Matheus Raduan. Frontend Developer "
         />
+        <meta name="theme-color" content="#000000"></meta>
       </Head>
       <GlobalStyles />
       <FirstRenderProvider>

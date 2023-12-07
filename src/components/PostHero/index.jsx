@@ -21,16 +21,16 @@ const PostHero = ({ title, image, description, tagCollection, sys }) => {
       <S.Wrapper>
         <S.DateWrapper>
           <S.PostReadingInfo>
-            DATE
-            <span className="small">{formatDate(sys.publishedAt)}</span>
+            DATE:
+            <span className="small"> {formatDate(sys.publishedAt)}</span>
           </S.PostReadingInfo>
           <S.PostReadingInfo>
-            TIME
-            <span className="small">12 min</span>
+            TIME:
+            <span className="small"> 12 min</span>
           </S.PostReadingInfo>
           <S.PostReadingInfo>
-            TAGS
-            <span className="small">{tagCollection.items[0].tagName}</span>
+            TAGS:
+            <span className="small"> {tagCollection.items[0].tagName}</span>
           </S.PostReadingInfo>
         </S.DateWrapper>
       </S.Wrapper>
