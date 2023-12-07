@@ -1,9 +1,7 @@
 import Image from 'next/image'
-import { TPost } from 'src/pages/blog'
 import PostLink from '../PostLink'
 import * as S from './styled'
 
-type TShowcasePostProps = TPost
 const ShowcasePost = (props) => {
   return (
     <S.Wrapper>
