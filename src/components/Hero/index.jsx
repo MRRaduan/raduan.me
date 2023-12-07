@@ -9,7 +9,7 @@ import { useFirstRender } from 'src/context/first-render'
 const Hero = () => {
   const bg = useRef(null)
   const content = useRef(null)
-  const aboutButton = useRef<HTMLDivElement>(null)
+  const aboutButton = useRef(null)
   const img = useRef(null)
   const { dispatch, state } = useFirstRender()
   const [tl, setTl] = useState(() =>
