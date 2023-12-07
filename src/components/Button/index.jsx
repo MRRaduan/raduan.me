@@ -1,10 +1,7 @@
 import React from 'react'
 import * as S from './styled'
 
-type ButtonProps = {
-  children: React.ReactNode
-}
-const Button = React.forwardRef((props: ButtonProps, ref) => {
+const Button = React.forwardRef((props, ref) => {
   const { children } = props
   return (
     <div ref={ref}>
