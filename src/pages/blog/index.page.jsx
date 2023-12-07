@@ -20,7 +20,7 @@ const Posts = ({ posts }) => {
               Some tech stuff <br /> and another <br /> things
             </S.BlogHeroTitle>
             <S.BlogHeroText>
-              Lorem ipsum dolor <br /> sit amet, consectetur
+              sharing <br /> to understand
             </S.BlogHeroText>
           </S.BlogHeroTitleWrapper>
         </S.BlogHero>

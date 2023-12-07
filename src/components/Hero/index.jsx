@@ -73,6 +73,7 @@ const Hero = () => {
           height="341"
           src="/images/hero-mobile.png"
           layout="fixed"
+          alt="Christian of John Bunyan daydreaming"
         />
       </S.ImageBg>
       <S.Content ref={content}>

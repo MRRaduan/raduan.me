@@ -1,6 +1,6 @@
 // import markdownToHtml from 'src/lib/markdownToHtml'
 
-import { getAllPosts, getPostBySlug } from 'src/utils/contentful'
+import { getPostBySlug } from 'src/utils/contentful'
 import BlogPost from 'src/templates/BlogPost'
 
 const Post = (post) => {

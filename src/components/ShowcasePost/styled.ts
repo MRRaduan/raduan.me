@@ -1,7 +1,6 @@
 import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import Button from 'src/components/Button'
 
 export const Wrapper = styled.div`
   width: 100%;

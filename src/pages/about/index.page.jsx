@@ -63,7 +63,7 @@ const About = () => {
             >
               iFood
             </a>
-            &nbsp;and group
+            &nbsp;and group&nbsp;
             <a
               href="https://www.movile.com.br/en"
               target="_blank"
@@ -71,7 +71,7 @@ const About = () => {
             >
               Movile
             </a>
-            ), and with huge client to
+            ), and with huge client to &nbsp;
             <a
               href="https://ciandt.com/us/en-us"
               target="_blank"
