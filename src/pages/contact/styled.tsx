@@ -142,9 +142,10 @@ export const CallWrapper = styled.div`
 export const ContactLinksWrapper = styled.section`
   margin-top: 2px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  height: calc(100vh - 375px);
+  /* height: calc(100vh - 375px); */
+  height: calc(100vh - 200px);
   grid-gap: 2px;
   ${media.greaterThan('large')`
     margin: 0px 0 0 3px;

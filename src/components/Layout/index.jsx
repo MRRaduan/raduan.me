@@ -7,12 +7,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <S.Layout>
-        {/* <S.Borders> */}
-        <div className="layout-direction">
-          <Header />
-          <S.ContentWrapper>{children}</S.ContentWrapper>
-        </div>
-        {/* </S.Borders> */}
+        <S.Borders>
+          <div className="layout-direction">
+            <Header />
+            <S.ContentWrapper>{children}</S.ContentWrapper>
+          </div>
+        </S.Borders>
         <Cursor />
       </S.Layout>
     </>

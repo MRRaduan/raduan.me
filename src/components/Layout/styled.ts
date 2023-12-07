@@ -33,7 +33,7 @@ export const Layout = styled.div`
 `
 
 export const Borders = styled.div`
-  /* position: fixed; */
+  position: fixed;
   overflow-y: scroll;
   top: 0;
   left: 0;
