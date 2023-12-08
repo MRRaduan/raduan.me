@@ -70,7 +70,7 @@ export const CircleWrapper = styled.div`
     display: block;
     /* display: none; */
     position: absolute;
-    right: -100px;
+    right: -50px;
     top: -55px;
   `}
 `

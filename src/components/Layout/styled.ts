@@ -70,7 +70,7 @@ export const ContentWrapper = styled.div`
     width: calc(100% - 353px);
     height: calc(100% - 30px);
     border-radius: 0 15px 15px 0;
-  margin-top: 0;
+    margin-top: 0;
   `}
 `
 

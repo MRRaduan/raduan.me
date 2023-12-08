@@ -37,7 +37,7 @@ const Header = () => {
             </svg>
             <S.Role>Frontend Engineer</S.Role>
             <S.RoleDescription>
-              I solve problems by design and building web experiences
+              I solve problems by designing and building web experiences
             </S.RoleDescription>
           </div>
         </S.Profile>

@@ -29,8 +29,10 @@ const About = () => {
               <span className="fw-b fs-i ff-s"> job</span> well
             </S.Title>
             <S.CaptionWrapper>
-              <S.Caption>Servant of Jesus, husband and web developer</S.Caption>
-              <S.Subtitle>in this order 😉</S.Subtitle>
+              <S.Caption>
+                I'm a servant of Jesus, a husband and a web developer
+              </S.Caption>
+              <S.Subtitle>in this exact sequence 😉</S.Subtitle>
             </S.CaptionWrapper>
           </S.TitleWrapper>
         </S.TextWrapper>
@@ -45,17 +47,18 @@ const About = () => {
             <S.QuoteAuthor>- Brian Reed -</S.QuoteAuthor>
           </S.QuoteWrapper>
           <p>
-            Hi! <br /> <br /> I&apos;m Matheus Raduan, and for 8 years I&apos;ve
-            been solving problems designing and building web experiences as
-            front-end developer living in Brazil 🇧🇷
+            Hi! <br /> <br /> I&apos;m Matheus Raduan, and throughout the last 8
+            years I&apos;ve been solving problems by designing and building web
+            experiences as a front-end developer living in Brazil 🇧🇷
           </p>
           <p>
-            I have experience since working as indie developer, going to a
-            digital agency (
+            I have experience starting from working as an indie developer, going
+            into a digital agency (
             <a href="https://audaz.com.br/" target="_blank" rel="noreferrer">
               audaz
             </a>
-            ), passing by a brazilian big tech product company (
+            ), going through one of the greatest brazilian tech product company
+            (
             <a
               href="https://institucional.ifood.com.br/"
               target="_blank"
@@ -63,15 +66,7 @@ const About = () => {
             >
               iFood
             </a>
-            &nbsp;and group&nbsp;
-            <a
-              href="https://www.movile.com.br/en"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Movile
-            </a>
-            ), and with huge client to &nbsp;
+            ), and also a huge&nbsp;
             <a
               href="https://ciandt.com/us/en-us"
               target="_blank"
@@ -79,10 +74,11 @@ const About = () => {
             >
               CI&T
             </a>
-            , attending EMEA market.
+            &apos;s client, operating EMEA (Europe, Middle East and Africa)
+            market.
           </p>
           <p>
-            My last contribution was for&nbsp;
+            My most recent contribution was to&nbsp;
             <a
               href="https://www.whiteprompt.com/"
               target="_blank"
@@ -90,15 +86,15 @@ const About = () => {
             >
               WhitePrompt
             </a>
-            &nbsp;as Software Engineer.
+            &nbsp;as a Software Engineer.
           </p>
           <p>
-            The main stack that I&apos;ve been worked is React, Next.js, Gatsby,
-            Vue.js, Typescript, React Query, CSS-in-JS, Jest (TDD), Material UI,
-            Contentful and designing REST APIs.
+            The main stack I&apos;ve been working with is: React, Next.js,
+            Gatsby, Vue.js, Typescript, React Query, CSS-in-JS, Jest (TDD),
+            Material UI, Contentful and designing REST APIs.
           </p>
           <p>
-            Recently I&apos;ve been focusing on Clean Architecture for the
+            I&apos;ve been recently focusing on Clean Architecture for the
             frontend environment.
           </p>
           <p>Nice to meet you! 😄</p>
