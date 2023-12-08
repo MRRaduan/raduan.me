@@ -34,26 +34,26 @@ export const Layout = styled.div`
 
 export const Borders = styled.div`
   /* position: fixed; */
-  overflow: scroll;
-  top: 0;
-  left: 0;
+  /* overflow: scroll; */
+  /* top: 0;
+  left: 0; */
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   border-radius: 24px;
-  border: double 0px transparent;
-  background-image: linear-gradient(transparent, transparent),
+  /* border: double 0px transparent; */
+  /* background-image: linear-gradient(transparent, transparent),
     linear-gradient(
       180deg,
       ${theme.colors.blue} 0%,
       ${theme.colors.red} 74.48%,
       ${theme.colors.orange} 100%
-    );
+    ); */
   background-origin: border-box;
   background-clip: content-box, border-box;
 
-  &::-webkit-scrollbar {
+  /* &::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
   ${media.greaterThan('medium')` 
     border-width: 15px;
