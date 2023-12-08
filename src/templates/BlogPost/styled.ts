@@ -55,6 +55,10 @@ export const PostContentWrapper = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
+  ul,
+  li {
+    margin-left: 1em;
+  }
 
   .video-container {
     position: relative;
