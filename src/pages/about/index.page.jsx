@@ -30,7 +30,7 @@ const About = () => {
             </S.Title>
             <S.CaptionWrapper>
               <S.Caption>
-                I'm a servant of Jesus, a husband and a web developer
+                I&apos;m a servant of Jesus, a husband and a web developer
               </S.Caption>
               <S.Subtitle>in this exact sequence 😉</S.Subtitle>
             </S.CaptionWrapper>
