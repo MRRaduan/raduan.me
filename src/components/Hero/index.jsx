@@ -61,20 +61,20 @@ const Hero = () => {
     }
   }, [isFirstRender, tl])
 
-  // useEffect(() => {
-  //   triggerWelcomeAnimation()
-  // }, [tl, triggerWelcomeAnimation])
+  useEffect(() => {
+    triggerWelcomeAnimation()
+  }, [tl, triggerWelcomeAnimation])
 
   return (
     <S.Section>
       <S.ImageBg ref={img}>
-        {/* <Image
+        <Image
           width="303"
           height="341"
           src="/images/hero-mobile.png"
           layout="fixed"
           alt="Christian of John Bunyan daydreaming"
-        /> */}
+        />
       </S.ImageBg>
       <S.Content ref={content} style={{ zIndex: !isFirstRender && 140 }}>
         <S.Hello>Hello! I&apos;m Matheus Raduan,</S.Hello>

@@ -6,11 +6,9 @@ export const Wrapper = styled.section`
   background-color: ${theme.colors.black};
   width: 100%;
   height: 100%;
-  padding: 40px 0px;
-  margin-top: 2px;
+  padding: 40px 0px 80px 0;
   ${media.greaterThan('medium')`
-    padding: 40px 0px;
-    margin-top: 0px;
+    padding: 40px 0px 40px 0;
   `}
 `
 

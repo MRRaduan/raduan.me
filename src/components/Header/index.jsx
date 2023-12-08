@@ -2,11 +2,14 @@ import * as S from './styled'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useFirstRender } from 'src/context/first-render'
 
 const Header = () => {
+  const { state } = useFirstRender()
+  const { isFirstRender } = state
   const [isAvatarHover, setIsAvatarHover] = useState(false)
   return (
-    <S.Header>
+    <S.Header style={{ zIndex: !isFirstRender && 149 }}>
       <Link href="/">
         <S.Profile>
           <S.Avatar

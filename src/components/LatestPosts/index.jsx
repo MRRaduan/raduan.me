@@ -16,18 +16,11 @@ const LatestPosts = ({ posts }) => {
       </S.TitleWrapper>
       <S.PostList>
         {posts.slice(0, 2).map((post) => (
-          <>
-            <Link href={`/blog/${post.slug}`} key={post.slug}>
-              <a>
-                <PostLink {...post} isShowCase={false} />
-              </a>
-            </Link>
-            <Link href={`/blog/${post.slug}`} key={`${post.slug}2`}>
-              <a>
-                <PostLink {...post} isShowCase={false} />
-              </a>
-            </Link>
-          </>
+          <Link href={`/blog/${post.slug}`} key={post.slug}>
+            <a>
+              <PostLink {...post} isShowCase={false} />
+            </a>
+          </Link>
         ))}
       </S.PostList>
     </S.Wrapper>

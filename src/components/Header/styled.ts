@@ -15,7 +15,6 @@ export const Header = styled.header`
   top: 0px;
   left: 6px;
   left: 0;
-  z-index: 149;
 
   &::after {
     content: '';
