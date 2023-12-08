@@ -21,6 +21,7 @@ const Cursor = () => {
         height="280"
         viewBox="0 0 280 280"
         ref={cursorRef}
+        style={{ zIndex: 999 }}
       >
         <defs>
           <filter

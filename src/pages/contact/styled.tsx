@@ -153,6 +153,7 @@ export const ContactLinksWrapper = styled.section`
     height: 100%;
     grid-template-columns: none;
     grid-template-rows: none;
+    height: calc(100vh - 30px);
   `}
   .post__wrapper {
     transition: all 0.2s ease-in-out;

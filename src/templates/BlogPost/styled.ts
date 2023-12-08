@@ -11,15 +11,14 @@ export const PostContent = styled.div`
 `
 
 export const PostContentWrapper = styled.div`
-  width: calc(100% - 80px);
-  margin: 40px auto;
+  width: calc(100% - 40px);
+  margin: 0 auto;
   display: block;
   max-width: 680px;
   font-size: 1.6rem;
   line-height: 1.6em;
   ${media.greaterThan('large')`
     font-size: 2rem;
-    margin-top: 80px;
   `}
 
   h2 {
@@ -36,6 +35,7 @@ export const PostContentWrapper = styled.div`
 
   p {
     margin-top: 2rem;
+    display: inline-block;
   }
 
   a {

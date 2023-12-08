@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
     }
     .cursor__inner {
       fill: transparent;
+
       stroke: ${theme.colors.white};
       stroke-width: 1px;
     }

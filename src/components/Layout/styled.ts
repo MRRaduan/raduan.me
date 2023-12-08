@@ -14,14 +14,11 @@ export const Layout = styled.div`
       ${theme.colors.orange} 100%
     );
   z-index: 1;
-  padding: 6px;
-  overflow-y: auto;
   ${media.greaterThan('medium')` 
     padding: 15px;
   `}
 
   .layout-direction {
-    /* margin-top: 73px; */
     margin-top: 67px;
     height: calc(100% - 73px);
     ${media.greaterThan('medium')` 
@@ -34,31 +31,30 @@ export const Layout = styled.div`
 `
 
 export const Borders = styled.div`
-  /* position: fixed; */
-  /* overflow: scroll; */
-  /* top: 0;
-  left: 0; */
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   border-radius: 24px;
-  /* border: double 0px transparent; */
-  /* background-image: linear-gradient(transparent, transparent),
+  border: double 0px transparent;
+  background-image: linear-gradient(transparent, transparent),
     linear-gradient(
       180deg,
       ${theme.colors.blue} 0%,
       ${theme.colors.red} 74.48%,
       ${theme.colors.orange} 100%
-    ); */
+    );
   background-origin: border-box;
   background-clip: content-box, border-box;
 
-  /* &::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
-  } */
+  }
 
   ${media.greaterThan('medium')` 
     border-width: 15px;
-    /* overflow-y: hidden; */
   `}
 `
 
@@ -66,6 +62,18 @@ export const ContentWrapper = styled.div`
   width: 100%;
   height: 100%;
   display: block;
-  /* display: flex;
-  flex-direction: column; */
+
+  ${media.greaterThan('medium')` 
+    position: fixed;
+    overflow-y: auto;
+    width: calc(100% - 353px);
+    height: calc(100% - 30px);
+    border-radius: 0 15px 15px 0;
+  `}
+`
+
+export const ContentWrapperScroll = styled.div`
+  ${media.greaterThan('medium')` 
+    overflow-y: clip;
+  `}
 `

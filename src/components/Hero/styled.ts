@@ -7,7 +7,7 @@ export const Section = styled.section`
   min-height: 357px;
   height: 100%;
   background-color: ${theme.colors.black};
-  position: relative;
+  /* position: relative; */
   ${media.greaterThan('medium')`
     height: auto;
   `}
@@ -51,7 +51,7 @@ export const Content = styled.div`
   width: calc(100% - 40px);
   margin: 0 auto;
   padding-top: 120px;
-  z-index: 150;
+  z-index: 147;
   ${media.greaterThan('medium')`
     padding: 6rem 0 6rem 6rem;
     height: 344px;

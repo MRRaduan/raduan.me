@@ -76,7 +76,7 @@ const Hero = () => {
           alt="Christian of John Bunyan daydreaming"
         />
       </S.ImageBg>
-      <S.Content ref={content}>
+      <S.Content ref={content} style={{ zIndex: !isFirstRender && 140 }}>
         <S.Hello>Hello! I&apos;m Matheus Raduan,</S.Hello>
         <S.Function>
           created to <br /> <span className="italic">Build</span>

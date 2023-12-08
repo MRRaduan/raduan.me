@@ -10,5 +10,6 @@ export const Wrapper = styled.div`
     margin-top: 3px;
     grid-gap: 3px;
     grid-template-columns: 1.2fr 1fr;
+    height: calc(100vh - 390px);
   `}
 `

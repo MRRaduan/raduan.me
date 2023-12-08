@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 import theme from '../../styles/theme'
 
 export const Header = styled.header`
-  width: calc(100% - 12px);
+  width: 100%;
   display: flex;
   background-color: ${theme.colors.black};
   justify-content: space-between;
@@ -12,10 +12,9 @@ export const Header = styled.header`
   height: 7.3rem;
   margin-bottom: 2px;
   position: fixed;
-  top: 6px;
   top: 0px;
   left: 6px;
-  /* border-radius: 12px 12px 0 0; */
+  left: 0;
   z-index: 149;
 
   &::after {
@@ -26,7 +25,6 @@ export const Header = styled.header`
     display: block;
     width: 100%;
     height: 1px;
-    /* background: ${theme.colors.blue} 0%; */
     background: #727272 0%;
 
     ${media.greaterThan('medium')`
