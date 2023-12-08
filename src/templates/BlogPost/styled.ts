@@ -5,8 +5,10 @@ import media from 'styled-media-query'
 export const PostContent = styled.div`
   background-color: ${theme.colors.black};
   margin-top: 2px;
+  padding: 0px 0px 40px 0;
   ${media.greaterThan('large')`
     margin-top: 3px;
+    padding: 40px 0 60px 0;
   `}
 `
 
