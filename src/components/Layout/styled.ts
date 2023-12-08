@@ -64,6 +64,7 @@ export const Borders = styled.div`
 export const ContentWrapper = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  /* display: flex;
+  flex-direction: column; */
 `
