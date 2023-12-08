@@ -7,8 +7,10 @@ export const Wrapper = styled.section`
   width: 100%;
   height: 100%;
   padding: 40px 0px;
+  margin-top: 2px;
   ${media.greaterThan('medium')`
     padding: 40px 0px;
+    margin-top: 0px;
   `}
 `
 
