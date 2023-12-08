@@ -39,15 +39,17 @@ function renderOptions(links) {
       [INLINES.HYPERLINK]: (node) => {
         if (node.data.uri.indexOf('embed') !== -1) {
           return (
-            <iframe
-              width="100%"
-              height="315"
-              src={node.data.uri}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+            <div className="video-container">
+              <iframe
+                width="680"
+                height="382"
+                src={node.data.uri}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           )
         }
         return (
