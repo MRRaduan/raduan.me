@@ -13,8 +13,9 @@ export const Header = styled.header`
   margin-bottom: 2px;
   position: fixed;
   top: 6px;
+  top: 0px;
   left: 6px;
-  border-radius: 12px 12px 0 0;
+  /* border-radius: 12px 12px 0 0; */
   z-index: 149;
 
   &::after {
@@ -24,8 +25,9 @@ export const Header = styled.header`
     left: 0;
     display: block;
     width: 100%;
-    height: 3px;
-    background: ${theme.colors.blue} 0%;
+    height: 1px;
+    /* background: ${theme.colors.blue} 0%; */
+    background: #727272 0%;
 
     ${media.greaterThan('medium')`
     display: none;

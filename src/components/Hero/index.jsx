@@ -61,9 +61,9 @@ const Hero = () => {
     }
   }, [isFirstRender, tl])
 
-  // useEffect(() => {
-  //   triggerWelcomeAnimation()
-  // }, [tl, triggerWelcomeAnimation])
+  useEffect(() => {
+    triggerWelcomeAnimation()
+  }, [tl, triggerWelcomeAnimation])
 
   return (
     <S.Section>

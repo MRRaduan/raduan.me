@@ -21,7 +21,8 @@ export const Layout = styled.div`
   `}
 
   .layout-direction {
-    margin-top: 73px;
+    /* margin-top: 73px; */
+    margin-top: 67px;
     height: calc(100% - 73px);
     ${media.greaterThan('medium')` 
     height: 100%;
