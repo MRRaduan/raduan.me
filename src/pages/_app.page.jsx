@@ -3,6 +3,8 @@ import GlobalStyles from 'src/styles/global'
 import Head from 'next/head'
 import NextNProgress from 'nextjs-progressbar'
 import { FirstRenderProvider } from '../context/first-render'
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
 
 function App({ Component, pageProps }) {
   return (
@@ -17,6 +19,7 @@ function App({ Component, pageProps }) {
           content="Personal website of Matheus Raduan, a frontend developer"
         />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <FirstRenderProvider>
         <NextNProgress
