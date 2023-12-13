@@ -42,17 +42,12 @@ export const Wrapper = styled.section`
   `}
 `
 
-export const PageTitle = styled.h2`
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: ${theme.colors.white};
-  font-weight: 300;
+export const PageTitleWrapper = styled.h2`
   z-index: 1;
   position: relative;
   padding: 28px 0 0 0px;
 
   ${media.greaterThan('large')`
-    font-size: 1.6rem;
     padding: 12px 0 0 0px;
   `}
 `

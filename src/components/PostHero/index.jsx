@@ -2,13 +2,16 @@ import * as S from './styled'
 
 import SVGLines from 'public/images/lines-horizontal.svg'
 import { formatDate } from 'src/utils'
+import BackPage from 'src/components/BackPage'
 
 const PostHero = ({ title, image, description, tagCollection, sys }) => {
   return (
     <S.Bg>
       <S.Wrapper>
         <div style={{ zIndex: 1, position: 'relative' }}>
-          <S.PageTitle>Post</S.PageTitle>
+          <S.PageTitleWrapper>
+            <BackPage title="post" />
+          </S.PageTitleWrapper>
           <S.PostTitle>{title}</S.PostTitle>
           <S.PostDescription>{description}</S.PostDescription>
           <S.SVGWrapper>

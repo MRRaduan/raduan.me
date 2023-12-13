@@ -3,6 +3,7 @@ import Layout from 'src/components/Layout'
 import PostLink from 'src/components/PostLink'
 import ShowcasePost from 'src/components/ShowcasePost'
 import { getAllPosts } from 'src/utils/contentful'
+import BackPage from 'src/components/BackPage'
 
 import * as S from './styled'
 
@@ -14,7 +15,9 @@ const Posts = ({ posts }) => {
     <Layout>
       <S.BlogWrapper>
         <S.BlogHero>
-          <S.BlogHeroPageTitle>blog</S.BlogHeroPageTitle>
+          <S.BlogHeroPageTitle>
+            <BackPage title="blog" />
+          </S.BlogHeroPageTitle>
           <S.BlogHeroTitleWrapper>
             <S.BlogHeroTitle>
               Some tech stuff <br /> and another <br /> things

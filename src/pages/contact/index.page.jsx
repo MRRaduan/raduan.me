@@ -1,6 +1,7 @@
 import Layout from 'src/components/Layout'
 import * as S from './styled'
 import GetInTouchLink from 'src/components/GetInTouchLink'
+import BackPage from 'src/components/BackPage'
 
 const contactLinks = [
   {
@@ -26,7 +27,9 @@ const GetInTouch = () => {
     <Layout>
       <S.AllContentWrapper>
         <S.CallWrapper>
-          <S.Title>Contact</S.Title>
+          <S.TitleWrapper>
+            <BackPage title="contact" />
+          </S.TitleWrapper>
           <S.ContentWrapper>
             <S.ContactHero>
               <S.CallTextWrapper>

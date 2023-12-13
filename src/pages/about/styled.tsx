@@ -46,17 +46,10 @@ export const ImgWrapper = styled.div`
   }
 `
 
-export const PageTitle = styled.h2`
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: ${theme.colors.white};
-  font-weight: 300;
-  z-index: 1;
-  position: relative;
+export const PageTitleWrapper = styled.div`
   padding: 28px 0 0 20px;
 
   ${media.greaterThan('large')`
-    font-size: 1.6rem;
     padding: 52px 0 0 60px;
   `}
 `

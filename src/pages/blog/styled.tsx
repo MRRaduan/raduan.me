@@ -24,14 +24,9 @@ export const BlogHero = styled.section`
   `}
 `
 export const BlogHeroPageTitle = styled.h1`
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: ${theme.colors.white};
   display: block;
-  font-weight: 300;
 
   ${media.greaterThan('large')`
-    font-size: 1.6rem;
     position: absolute;
     top: 52px;
     left: 60px;

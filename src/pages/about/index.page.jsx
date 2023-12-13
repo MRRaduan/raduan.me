@@ -1,12 +1,15 @@
 import Layout from 'src/components/Layout'
 import Image from 'next/image'
 import * as S from './styled'
+import BackPage from '../../components/BackPage'
 
 const About = () => {
   return (
     <Layout>
       <S.Wrapper>
-        <S.PageTitle>About me</S.PageTitle>
+        <S.PageTitleWrapper>
+          <BackPage title="about me" />
+        </S.PageTitleWrapper>
         <S.ImgWrapper>
           <Image
             width="303"

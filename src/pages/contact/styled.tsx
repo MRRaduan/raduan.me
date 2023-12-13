@@ -17,16 +17,10 @@ export const ContactHero = styled.section`
   `}
 `
 
-export const Title = styled.h2`
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: ${theme.colors.white};
-  font-weight: 300;
-  z-index: 1;
+export const TitleWrapper = styled.h2`
   position: relative;
   padding-left: 20px;
   ${media.greaterThan('large')`
-    font-size: 1.6rem;
     padding-left: 60px;
   `}
 `
