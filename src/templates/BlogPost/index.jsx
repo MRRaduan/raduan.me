@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import * as S from './styled'
+import { NextSeo } from 'next-seo'
 
 function renderOptions(links) {
   const assetMap = new Map()
@@ -70,18 +71,35 @@ function renderOptions(links) {
 
 const BlogPost = ({ post }) => {
   return (
-    <Layout>
-      <PostHero {...post} />
-      <S.PostContent>
-        <S.PostContentWrapper className="postFormat" suppressHydrationWarning>
-          {post.content.json &&
-            documentToReactComponents(
-              post.content.json,
-              renderOptions(post.content.links)
-            )}
-        </S.PostContentWrapper>
-      </S.PostContent>
-    </Layout>
+    <>
+      <NextSeo
+        title={`${post.title} - Matheus Raduan`}
+        description={post.description}
+        openGraph={{
+          url: `https://raduan.me/blog/${post.slug}`,
+          title: `${post.title} - Matheus Raduan`,
+          description: post.description,
+          images: [
+            {
+              url: post.image.url,
+              alt: post.title,
+            },
+          ],
+        }}
+      />
+      <Layout>
+        <PostHero {...post} />
+        <S.PostContent>
+          <S.PostContentWrapper className="postFormat" suppressHydrationWarning>
+            {post.content.json &&
+              documentToReactComponents(
+                post.content.json,
+                renderOptions(post.content.links)
+              )}
+          </S.PostContentWrapper>
+        </S.PostContent>
+      </Layout>
+    </>
   )
 }
 
