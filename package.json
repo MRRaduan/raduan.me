@@ -25,6 +25,7 @@
     "gray-matter": "^4.0.3",
     "gsap": "^3.11.0",
     "next": "12.2.2",
+    "next-seo": "^6.4.0",
     "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
