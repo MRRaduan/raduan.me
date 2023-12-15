@@ -3,8 +3,15 @@ import Button from '../Button'
 import * as S from './styled'
 import { formatDate } from 'src/utils'
 
-const PostLink = ({ title, description, sys, tagCollection, isShowCase }) => {
-  const postDate = formatDate(sys.publishedAt)
+const PostLink = ({
+  title,
+  description,
+  sys,
+  tagCollection,
+  isShowCase,
+  customDate,
+}) => {
+  const postDate = formatDate(customDate ? customDate : sys.publishedAt)
 
   const [isHover, setIsHover] = useState(false)
 

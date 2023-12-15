@@ -9,6 +9,7 @@ export async function getAllPosts() {
           items {
             title
             description
+            customDate
             sys {
               publishedAt
             }
@@ -37,6 +38,7 @@ export async function getPostBySlug(slug) {
           items {
             title
             description
+            customDate
             sys {
               publishedAt
             }

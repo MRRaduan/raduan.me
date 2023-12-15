@@ -4,7 +4,14 @@ import SVGLines from 'public/images/lines-horizontal.svg'
 import { formatDate } from 'src/utils'
 import BackPage from 'src/components/BackPage'
 
-const PostHero = ({ title, image, description, tagCollection, sys }) => {
+const PostHero = ({
+  title,
+  image,
+  description,
+  tagCollection,
+  customDate,
+  sys,
+}) => {
   return (
     <S.Bg>
       <S.Wrapper>
@@ -25,7 +32,10 @@ const PostHero = ({ title, image, description, tagCollection, sys }) => {
         <S.DateWrapper>
           <S.PostReadingInfo>
             DATE:
-            <span className="small"> {formatDate(sys.publishedAt)}</span>
+            <span className="small">
+              {' '}
+              {formatDate(customDate ? customDate : sys.publishedAt)}
+            </span>
           </S.PostReadingInfo>
           <S.PostReadingInfo>
             TIME:

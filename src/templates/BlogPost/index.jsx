@@ -70,6 +70,7 @@ function renderOptions(links) {
 }
 
 const BlogPost = ({ post }) => {
+  console.log(post)
   return (
     <>
       <NextSeo
