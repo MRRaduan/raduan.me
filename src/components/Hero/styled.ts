@@ -72,8 +72,8 @@ export const Function = styled.h2`
   ${media.greaterThan('medium')`
     font-size: clamp(
     5.0rem,
-    calc(4.5rem + (100 - 50) * (100vw - 320px) / (1920 - 320)),
-    10.0rem
+    calc(1em + (100 - 10) * (100vw - 320px) / (1920 - 320)),
+    20rem
   );
   `} ${media.greaterThan('large')`
   `} > .italic,
