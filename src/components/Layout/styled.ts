@@ -73,9 +73,3 @@ export const ContentWrapper = styled.div`
     margin-top: 0;
   `}
 `
-
-export const ContentWrapperScroll = styled.div`
-  ${media.greaterThan('medium')` 
-    overflow-y: clip;
-  `}
-`

@@ -7,7 +7,7 @@ export const Wrapper = styled.button`
   border: none;
   color: ${theme.colors.white};
   font-size: 1.6rem;
-  padding: 4px 8px;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
   position: relative;

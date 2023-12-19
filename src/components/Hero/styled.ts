@@ -4,12 +4,11 @@ import media from 'styled-media-query'
 
 export const Section = styled.section`
   width: 100%;
-  min-height: 357px;
-  height: 100%;
   background-color: ${theme.colors.black};
-  /* position: relative; */
   ${media.greaterThan('medium')`
-    height: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
   `}
   > h1 {
     position: relative;
@@ -51,10 +50,11 @@ export const Content = styled.div`
   width: calc(100% - 40px);
   margin: 0 auto;
   padding-top: 120px;
+  padding-bottom: 40px;
   z-index: 147;
   ${media.greaterThan('medium')`
-    padding: 6rem 0 6rem 6rem;
-    height: 344px;
+    margin: 0;
+    padding: 4rem 0 4rem 6rem;
   `}
 `
 
@@ -70,9 +70,12 @@ export const Function = styled.h2`
   line-height: 1.175em;
   margin-top: 4px;
   ${media.greaterThan('medium')`
-    font-size: 5.7rem;
+    font-size: clamp(
+    5.0rem,
+    calc(4.5rem + (100 - 50) * (100vw - 320px) / (1920 - 320)),
+    10.0rem
+  );
   `} ${media.greaterThan('large')`
-    font-size: 7.2rem;
   `} > .italic,
     .e {
     font-family: ${theme.font.serif};

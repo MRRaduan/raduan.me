@@ -20,14 +20,21 @@ export const PostDescriptionWrapper = styled.div``
 
 export const PostTitle = styled.h1`
   font-family: ${theme.font.serif};
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   color: ${theme.colors.white};
   font-weight: 300;
   margin-bottom: 4px;
+  /* font-size: clamp(
+    2.2rem,
+    calc(2.2rem + (32 - 22) * (100vw - 320px) / (1920 - 320)),
+    4.8rem
+  ); */
 
-  ${media.greaterThan('huge')`
+  font-size: 20px;
+
+  /* ${media.greaterThan('huge')`
     font-size: 2.8rem;
-  `}
+  `} */
 `
 
 export const PostDescription = styled.h2`

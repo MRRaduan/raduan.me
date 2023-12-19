@@ -9,9 +9,7 @@ const Layout = ({ children }) => {
       <S.Layout>
         <div className="layout-direction">
           <Header />
-          <S.ContentWrapper>
-            <S.ContentWrapperScroll>{children}</S.ContentWrapperScroll>
-          </S.ContentWrapper>
+          <S.ContentWrapper>{children}</S.ContentWrapper>
         </div>
         <Cursor />
       </S.Layout>

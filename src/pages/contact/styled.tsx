@@ -2,6 +2,15 @@ import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+export const FixedHeightScroll = styled.div`
+  ${media.greaterThan('medium')` 
+    overflow-y: clip;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  `}
+`
+
 export const ContactHero = styled.section`
   background-color: ${theme.colors.black};
   width: 100%;

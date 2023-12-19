@@ -67,7 +67,7 @@ const Hero = () => {
 
   return (
     <S.Section>
-      <S.ImageBg ref={img}>
+      {/* <S.ImageBg ref={img}>
         <Image
           width="303"
           height="341"
@@ -75,7 +75,7 @@ const Hero = () => {
           layout="fixed"
           alt="Christian of John Bunyan daydreaming"
         />
-      </S.ImageBg>
+      </S.ImageBg> */}
       <S.Content ref={content} style={{ zIndex: !isFirstRender && 140 }}>
         <S.Hello>Hello! I&apos;m Matheus Raduan,</S.Hello>
         <S.Function>

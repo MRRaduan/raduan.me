@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   height: 100%;
   padding: 40px 0px 80px 0;
   ${media.greaterThan('medium')`
-    padding: 40px 0px 40px 0;
+    padding: 40px  40px ;
   `}
 `
 
@@ -21,7 +21,6 @@ export const TitleWrapper = styled.div`
   margin-bottom: 1.6rem;
   ${media.greaterThan('huge')`
     margin-bottom: 2rem;
-    padding: 0 60px;
   `}
 `
 
@@ -35,10 +34,6 @@ export const Title = styled.h1`
 
 export const PostList = styled.div`
   display: grid;
-
-  ${media.greaterThan('large')`
-    padding: 0 40px;
-  `}
 
   ${media.greaterThan('huge')`
     grid-gap: 20px;

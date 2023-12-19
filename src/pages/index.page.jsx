@@ -20,11 +20,13 @@ const Home = (props) => {
   return (
     <>
       <Layout>
-        <Hero />
-        <S.Wrapper>
-          <GetInTouch />
-          <LatestPosts posts={posts} />
-        </S.Wrapper>
+        <S.FixedHeightScroll>
+          <Hero />
+          <S.Wrapper>
+            <GetInTouch />
+            <LatestPosts posts={posts} />
+          </S.Wrapper>
+        </S.FixedHeightScroll>
       </Layout>
     </>
   )
