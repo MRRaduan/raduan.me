@@ -5,6 +5,7 @@ import NextNProgress from 'nextjs-progressbar'
 import { FirstRenderProvider } from '../context/first-render'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 function App({ Component, pageProps }) {
   return (
@@ -33,6 +34,7 @@ function App({ Component, pageProps }) {
           }}
         />
         <Component {...pageProps} />
+        <SpeedInsights />
       </FirstRenderProvider>
     </>
   )
